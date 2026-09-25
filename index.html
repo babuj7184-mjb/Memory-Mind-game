@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>🧠 Memory Master</h1>
+            <p>Test your memory and concentration!</p>
+        </header>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <span>⏱️ Time</span>
+                <strong id="timer">00:00</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>🎯 Moves</span>
+                <strong id="moves">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>⭐ Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat-box">
+                <span>🏆 Best</span>
+                <strong id="bestScore">0</strong>
+            </div>
+
+        </div>
+
+        <div class="controls">
+
+            <label for="difficulty">Difficulty:</label>
+
+            <select id="difficulty">
+                <option value="easy">Easy - 8 Cards</option>
+                <option value="medium">Medium - 12 Cards</option>
+                <option value="hard">Hard - 16 Cards</option>
+            </select>
+
+            <button id="restartBtn">🔄 Restart</button>
+
+        </div>
+
+        <div id="gameBoard" class="game-board"></div>
+
+        <div id="message" class="message"></div>
+
+        <footer>
+            <p>🧠 Train your brain every day!</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
